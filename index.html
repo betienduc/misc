@@ -23,7 +23,8 @@
 </head>
 <body>
 
-    <video src="./tripletxcookpardon.mp4" controls loop playsinline></video>
+    <video id="myVideo" src="./tripletxcookpardon.mp4" controls loop playsinline></video>
+
     <script>
         const video = document.getElementById('myVideo');
 
@@ -31,7 +32,7 @@
             console.log("Trình duyệt chặn autoplay có tiếng. Đang chờ người dùng tương tác...");
             document.body.addEventListener('click', () => {
                 video.play();
-            }, { once: true }); 
+            }, { once: true });
         });
     </script>
 
